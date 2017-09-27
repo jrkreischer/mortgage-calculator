@@ -7,34 +7,40 @@
   </head>
   <body>
 
-    <label>Years:</label><br>
-    <input type="text" id="years" value="30"><br>
-    <label>Interest Rate:</label><br>
-    <input type="text" id="interest-rate" value="8.0"><br>
-    <label>Loan Amount:</label><br>
-    <input type="text" id="loan-amount" value="100000"><br>
-    <label>Annual Tax:</label><br>
-    <input type="text" id="annual-tax" value="1000"><br>
-    <label>Annual Insurance:</label><br>
-    <input type="text" id="annual-insurance" value="300"><br>
+    <div id="calculator">
+      <label>Years:</label><br>
+      <input type="text" id="years" value="30"><br>
+      <label>Interest Rate:</label><br>
+      <input type="text" id="interest-rate" value="8.0"><br>
+      <label>Loan Amount:</label><br>
+      <input type="text" id="loan-amount" value="100000"><br>
+      <label>Annual Tax:</label><br>
+      <input type="text" id="annual-tax" value="1000"><br>
+      <label>Annual Insurance:</label><br>
+      <input type="text" id="annual-insurance" value="300"><br>
 
-    <p><button type="submit" id="calculate">Calculate</button></p>
+      <p id="error">&nbsp;</p>
+
+      <p><button type="submit" id="calculate">Calculate</button></p>
+    </div><!-- #calculator -->
 
     <hr>
 
     <h3>Results:</h3>
-    
-    <label>Monthly Principal + Interest:</label><br>
-    <span id="principal-plus-interest"></span><br>
 
-    <label>Monthly Tax:</label><br>
-    <span id="monthly-tax"></span><br>
+    <div id="outputs">
+      <label>Monthly Principal + Interest:</label><br>
+      <span id="principal-plus-interest"></span><br>
 
-    <label>Monthly Insurance:</label><br>
-    <span id="monthly-insurance"></span><br>
+      <label>Monthly Tax:</label><br>
+      <span id="monthly-tax"></span><br>
 
-    <label>Monthly Payment:</label><br>
-    <span id="monthly-payment"></span><br>
+      <label>Monthly Insurance:</label><br>
+      <span id="monthly-insurance"></span><br>
+
+      <label>Monthly Payment:</label><br>
+      <span id="monthly-payment"></span><br>
+    </div><!-- #outputs -->
 
     <script src="mortgage-calculator.js"></script>
 
