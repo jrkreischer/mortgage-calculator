@@ -38,7 +38,7 @@ function calcMortgageMonthly() {
 
 function percentage() {
   'use strict';
-  
+
   if (interestRate.value < 1.0) {
     i = parseFloat(interestRate.value/12);
   } else {
@@ -60,7 +60,7 @@ function validate() {
 
   var validateInputs = (function() {
     var re = /^\d+(?:\.\d{1,2})?$/; // Regex to check for valid number
-    var reDecPercent = /^(\.\d{1,2})/; // Regex for decimal percentage
+    var reDecPercent = /^(\.\d{1,2})?$/; // Regex for decimal percentage
     var good = 0; // Counter for validated inputs
     var inputs = document.querySelectorAll('#calculator input[type=text]');
 
