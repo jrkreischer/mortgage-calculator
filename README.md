@@ -1,2 +1,2 @@
 # Mortgage Calculator
-Simple mortgage calculator with monthly tax and insurance,
+Simple mortgage calculator with monthly tax and insurance.
