@@ -4,12 +4,13 @@
   <head>
     <meta charset="utf-8">
     <title>Mortgage Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
 
-    <h2>Mortgage Calculator</h2>
+    <div id="mortgage-calculator" class="calculator">
+      <h2>Mortgage Calculator</h2>
 
-    <div id="mortgage-calculator">
       <label>Years:</label><br>
       <input type="text" id="years" value="30"><br>
       <label>Interest Rate:</label><br>
@@ -21,7 +22,7 @@
       <label>Annual Insurance:</label><br>
       <input type="text" id="annual-insurance" value="300"><br>
 
-      <p id="error">&nbsp;</p>
+      <p id="error" class="validation-error">&nbsp;</p>
 
       <p><button type="submit" id="calculate">Calculate</button></p>
 
@@ -29,7 +30,7 @@
 
       <h3>Results:</h3>
 
-      <div id="outputs">
+      <div id="outputs" class="results">
         <label>Monthly Principal + Interest:</label><br>
         <span id="principal-plus-interest"></span><br>
 
